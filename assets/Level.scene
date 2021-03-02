@@ -1,0 +1,123 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level",
+        "borderWidth": 3200,
+        "borderHeight": 3200
+    },
+    "displayList": [
+        {
+            "type": "TilemapLayer",
+            "id": "ad0da947-4a33-4b9a-a654-6d87ca948c1c",
+            "label": "floor_1",
+            "components": [],
+            "tilemapId": "76ae96b0-8fda-4b16-b59b-2f4c683fd572",
+            "layerName": "Floor",
+            "tilesets": [
+                "tileset_1",
+                "exit"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "098e3342-83d2-45ce-a3ce-e3b03f555976",
+            "label": "gamelayer",
+            "scope": "CLASS",
+            "components": [],
+            "tilemapId": "76ae96b0-8fda-4b16-b59b-2f4c683fd572",
+            "layerName": "Gamelayer",
+            "tilesets": [
+                "tileset_1",
+                "exit"
+            ]
+        },
+        {
+            "type": "Sprite",
+            "id": "4434dd05-e98b-43fa-b3b5-8d3cb00a7db8",
+            "label": "player",
+            "scope": "CLASS",
+            "components": [
+                "Physics",
+                "Movement"
+            ],
+            "Physics.width": 40,
+            "Physics.height": 32,
+            "Physics.offsetX": 15,
+            "Physics.offsetY": 20,
+            "texture": {
+                "key": "player_23"
+            },
+            "x": 3047,
+            "y": 3112
+        },
+        {
+            "type": "Text",
+            "id": "c8e7d09b-84c6-485e-87fd-66c7e56c68bf",
+            "label": "timer",
+            "scope": "CLASS",
+            "components": [],
+            "x": 2916,
+            "y": 3064,
+            "scaleX": 3,
+            "scaleY": 3,
+            "originX": 0,
+            "originY": 0,
+            "text": "0",
+            "fontSize": "26px",
+            "fontStyle": "bold",
+            "color": "#302727ff"
+        },
+        {
+            "type": "Image",
+            "id": "7f3fbf1c-f72f-408c-b064-881ca2adf493",
+            "label": "step",
+            "scope": "CLASS",
+            "components": [
+                "Physics"
+            ],
+            "texture": {
+                "key": "wall_tile"
+            },
+            "x": 96,
+            "y": 54,
+            "scaleX": 1.2775417181338569,
+            "scaleY": 1.8106937841426556
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "76ae96b0-8fda-4b16-b59b-2f4c683fd572",
+            "type": "Tilemap",
+            "label": "fire_exit_uusi",
+            "key": "Fire_exit_uusi",
+            "tilesets": [
+                {
+                    "name": "tileset_1",
+                    "imageKey": "tiles"
+                },
+                {
+                    "name": "exit",
+                    "imageKey": "exit_tile"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    },
+    "lists": [
+        {
+            "id": "e97ffe51-fee0-4dee-94ec-9dba8cff9250",
+            "label": "walls",
+            "objectIds": [
+                "ec2ca18f-ac68-4203-9cb0-06a8d359deb1",
+                "098e3342-83d2-45ce-a3ce-e3b03f555976"
+            ]
+        }
+    ]
+}

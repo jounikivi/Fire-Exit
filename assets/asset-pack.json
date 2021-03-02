@@ -1,0 +1,202 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "components/Countdown.js",
+                "type": "script",
+                "key": "Countdown"
+            },
+            {
+                "url": "components/DepthSortY.js",
+                "type": "script",
+                "key": "DepthSortY"
+            },
+            {
+                "url": "assets/tiled/exit_tile.png",
+                "type": "image",
+                "key": "exit_tile"
+            },
+            {
+                "url": "assets/Final.js",
+                "type": "sceneFile",
+                "key": "Final"
+            },
+            {
+                "url": "assets/tiled/Fire_exit_uusi.json",
+                "type": "tilemapTiledJSON",
+                "key": "Fire_exit_uusi"
+            },
+            {
+                "url": "assets/images_environment/FireExitend2.png",
+                "type": "image",
+                "key": "FireExitend2"
+            },
+            {
+                "url": "assets/images_environment/FireMenu.png",
+                "type": "image",
+                "key": "FireMenu"
+            },
+            {
+                "url": "components/FixedToCamera.js",
+                "type": "script",
+                "key": "FixedToCamera"
+            },
+            {
+                "url": "components/Flame.js",
+                "type": "script",
+                "key": "Flame"
+            },
+            {
+                "url": "assets/images_environment/flame_big_1.png",
+                "type": "image",
+                "key": "flame_big_1"
+            },
+            {
+                "url": "assets/images_environment/flame_big_2.png",
+                "type": "image",
+                "key": "flame_big_2"
+            },
+            {
+                "url": "assets/images_environment/flame_big_3.png",
+                "type": "image",
+                "key": "flame_big_3"
+            },
+            {
+                "url": "assets/images_environment/flame_big_4.png",
+                "type": "image",
+                "key": "flame_big_4"
+            },
+            {
+                "url": "assets/images_environment/flame_big_5.png",
+                "type": "image",
+                "key": "flame_big_5"
+            },
+            {
+                "url": "assets/images_environment/gameOver.png",
+                "type": "image",
+                "key": "gameOver"
+            },
+            {
+                "url": "assets/images_environment/heart_64.png",
+                "type": "image",
+                "key": "heart_64"
+            },
+            {
+                "url": "assets/images_environment/hearts.PNG",
+                "type": "image",
+                "key": "hearts"
+            },
+            {
+                "url": "assets/Level.js",
+                "type": "sceneFile",
+                "key": "Level"
+            },
+            {
+                "url": "assets/Menu.js",
+                "type": "sceneFile",
+                "key": "Menu"
+            },
+            {
+                "url": "components/Movement.js",
+                "type": "script",
+                "key": "Movement"
+            },
+            {
+                "url": "components/Physics.js",
+                "type": "script",
+                "key": "Physics"
+            },
+            {
+                "url": "assets/images_player/player_01.png",
+                "type": "image",
+                "key": "player_01"
+            },
+            {
+                "url": "assets/images_player/player_02.png",
+                "type": "image",
+                "key": "player_02"
+            },
+            {
+                "url": "assets/images_player/player_03.png",
+                "type": "image",
+                "key": "player_03"
+            },
+            {
+                "url": "assets/images_player/player_04.png",
+                "type": "image",
+                "key": "player_04"
+            },
+            {
+                "url": "assets/images_player/player_11.png",
+                "type": "image",
+                "key": "player_11"
+            },
+            {
+                "url": "assets/images_player/player_12.png",
+                "type": "image",
+                "key": "player_12"
+            },
+            {
+                "url": "assets/images_player/player_13.png",
+                "type": "image",
+                "key": "player_13"
+            },
+            {
+                "url": "assets/images_player/player_14.png",
+                "type": "image",
+                "key": "player_14"
+            },
+            {
+                "url": "assets/images_player/player_15.png",
+                "type": "image",
+                "key": "player_15"
+            },
+            {
+                "url": "assets/images_player/player_16.png",
+                "type": "image",
+                "key": "player_16"
+            },
+            {
+                "url": "assets/images_player/player_23.png",
+                "type": "image",
+                "key": "player_23"
+            },
+            {
+                "url": "assets/images_player/player_24.png",
+                "type": "image",
+                "key": "player_24"
+            },
+            {
+                "url": "components/player-animations.json",
+                "type": "animation",
+                "key": "player-animations"
+            },
+            {
+                "url": "assets/images_environment/restart.png",
+                "type": "image",
+                "key": "restart"
+            },
+            {
+                "url": "assets/tiled/tiles.png",
+                "type": "image",
+                "key": "tiles"
+            },
+            {
+                "url": "assets/variables.js",
+                "type": "script",
+                "key": "variables"
+            },
+            {
+                "url": "assets/images_environment/wall_tile.png",
+                "type": "image",
+                "key": "wall_tile"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2
+    }
+}
