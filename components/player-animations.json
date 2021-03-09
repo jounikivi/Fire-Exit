@@ -1,11 +1,35 @@
 {
     "anims": [
         {
-            "key": "down-idle",
+            "key": "down_idle",
             "type": "frame",
             "frames": [
                 {
-                    "key": "player_23",
+                    "key": "down_idle",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "down_walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "down_1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "down_2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "down_3",
                     "duration": 0,
                     "keyframe": false
                 }
@@ -15,21 +39,35 @@
             "repeat": -1
         },
         {
-            "key": "down-walk",
+            "key": "up_idle",
             "type": "frame",
             "frames": [
                 {
-                    "key": "player_23",
+                    "key": "up_idle",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "up_walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "up_1",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "player_24",
+                    "key": "up_2",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "player_01",
+                    "key": "up_3",
                     "duration": 0,
                     "keyframe": false
                 }
@@ -39,11 +77,40 @@
             "repeat": -1
         },
         {
-            "key": "up-idle",
+            "key": "right_idle",
             "type": "frame",
             "frames": [
                 {
-                    "key": "player_02",
+                    "key": "right_1",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "right_walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "right_1",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "right_2",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "right_3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "right_4",
                     "duration": 0,
                     "keyframe": false
                 }
@@ -53,136 +120,45 @@
             "repeat": -1
         },
         {
-            "key": "up-walk",
+            "key": "left_idle",
             "type": "frame",
             "frames": [
                 {
-                    "key": "player_02",
+                    "key": "left_idle",
+                    "duration": 0,
+                    "keyframe": false
+                }
+            ],
+            "frameRate": 24,
+            "skipMissedFrames": true,
+            "repeat": -1
+        },
+        {
+            "key": "left_walk",
+            "type": "frame",
+            "frames": [
+                {
+                    "key": "left_1",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "player_03",
+                    "key": "left_2",
                     "duration": 0,
                     "keyframe": false
                 },
                 {
-                    "key": "player_04",
+                    "key": "left_3",
+                    "duration": 0,
+                    "keyframe": false
+                },
+                {
+                    "key": "left_4",
                     "duration": 0,
                     "keyframe": false
                 }
             ],
             "frameRate": 10,
-            "skipMissedFrames": true,
-            "repeat": -1
-        },
-        {
-            "key": "right-idle",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "player_11",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 10,
-            "skipMissedFrames": true,
-            "repeat": -1
-        },
-        {
-            "key": "right-walk",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "player_11",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "player_12",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "player_13",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 10,
-            "skipMissedFrames": true,
-            "repeat": -1
-        },
-        {
-            "key": "left-idle",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "player_14",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 10,
-            "skipMissedFrames": true,
-            "repeat": -1
-        },
-        {
-            "key": "left-walk",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "player_14",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "player_15",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "player_16",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 10,
-            "skipMissedFrames": true,
-            "repeat": -1
-        },
-        {
-            "key": "flame",
-            "type": "frame",
-            "frames": [
-                {
-                    "key": "flame_big_1",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "flame_big_2",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "flame_big_3",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "flame_big_4",
-                    "duration": 0,
-                    "keyframe": false
-                },
-                {
-                    "key": "flame_big_5",
-                    "duration": 0,
-                    "keyframe": false
-                }
-            ],
-            "frameRate": 2,
             "skipMissedFrames": true,
             "repeat": -1
         }

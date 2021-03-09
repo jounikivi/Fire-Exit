@@ -48,30 +48,30 @@ class Movement {
 		if (this.cursors.left.isDown)
 		{
 			body.setVelocity(-speed, 0)
-			player.play('left-walk', true)
+			player.play('left_walk', true)
 		}
 		else if (this.cursors.right.isDown)
 		{
 			body.setVelocity(speed, 0)
-			player.play('right-walk', true)
+			player.play('right_walk', true)
 		}
 		else if (this.cursors.up.isDown)
 		{
 			body.setVelocity(0, -speed)
-			player.play('up-walk', true)
+			player.play('up_walk', true)
 		}
 		else if (this.cursors.down.isDown)
 		{
 			body.setVelocity(0, speed)
-			player.play('down-walk', true)
+			player.play('down_walk', true)
 		}
 		else
 		{
 			body.setVelocity(0, 0)
 			const key = player.anims.currentAnim.key
-			const parts = key.split('-')
+			const parts = key.split('_')
 			const direction = parts[0]
-			player.play(`${direction}-idle`)
+			player.play(`${direction}_idle`)
 		}
 	}
 

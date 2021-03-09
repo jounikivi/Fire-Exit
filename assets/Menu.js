@@ -15,6 +15,9 @@ class Menu extends Phaser.Scene {
 	
 	editorCreate() {
 		
+		// fire_Exitmenu
+		this.add.image(1600, 1600, "Fire-Exitmenu");
+		
 		// fireMenu
 		this.add.image(1600, 1600, "FireMenu");
 	}

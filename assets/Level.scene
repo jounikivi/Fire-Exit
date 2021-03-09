@@ -35,42 +35,6 @@
             ]
         },
         {
-            "type": "Sprite",
-            "id": "4434dd05-e98b-43fa-b3b5-8d3cb00a7db8",
-            "label": "player",
-            "scope": "CLASS",
-            "components": [
-                "Physics",
-                "Movement"
-            ],
-            "Physics.width": 40,
-            "Physics.height": 32,
-            "Physics.offsetX": 15,
-            "Physics.offsetY": 20,
-            "texture": {
-                "key": "player_23"
-            },
-            "x": 3047,
-            "y": 3112
-        },
-        {
-            "type": "Text",
-            "id": "c8e7d09b-84c6-485e-87fd-66c7e56c68bf",
-            "label": "timer",
-            "scope": "CLASS",
-            "components": [],
-            "x": 2916,
-            "y": 3064,
-            "scaleX": 3,
-            "scaleY": 3,
-            "originX": 0,
-            "originY": 0,
-            "text": "0",
-            "fontSize": "26px",
-            "fontStyle": "bold",
-            "color": "#302727ff"
-        },
-        {
             "type": "Image",
             "id": "7f3fbf1c-f72f-408c-b064-881ca2adf493",
             "label": "step",
@@ -85,6 +49,25 @@
             "y": 54,
             "scaleX": 1.2775417181338569,
             "scaleY": 1.8106937841426556
+        },
+        {
+            "type": "Sprite",
+            "id": "ccc4a92a-552f-4ad6-b982-35661f5fa9a2",
+            "label": "player",
+            "scope": "CLASS",
+            "components": [
+                "Physics",
+                "Movement"
+            ],
+            "Physics.width": 40,
+            "Physics.height": 32,
+            "Physics.offsetX": 15,
+            "Physics.offsetY": 20,
+            "texture": {
+                "key": "down_idle"
+            },
+            "x": 3044,
+            "y": 3098
         }
     ],
     "plainObjects": [

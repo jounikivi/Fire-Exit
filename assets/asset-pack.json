@@ -2,6 +2,11 @@
     "section1": {
         "files": [
             {
+                "url": "assets/images_environment/burn_house.png",
+                "type": "image",
+                "key": "burn_house"
+            },
+            {
                 "url": "components/Countdown.js",
                 "type": "script",
                 "key": "Countdown"
@@ -12,24 +17,34 @@
                 "key": "DepthSortY"
             },
             {
+                "url": "assets/images_player/down_1.png",
+                "type": "image",
+                "key": "down_1"
+            },
+            {
+                "url": "assets/images_player/down_2.png",
+                "type": "image",
+                "key": "down_2"
+            },
+            {
+                "url": "assets/images_player/down_3.png",
+                "type": "image",
+                "key": "down_3"
+            },
+            {
+                "url": "assets/images_player/down_idle.png",
+                "type": "image",
+                "key": "down_idle"
+            },
+            {
                 "url": "assets/tiled/exit_tile.png",
                 "type": "image",
                 "key": "exit_tile"
             },
             {
-                "url": "assets/Final.js",
-                "type": "sceneFile",
-                "key": "Final"
-            },
-            {
                 "url": "assets/tiled/Fire_exit_uusi.json",
                 "type": "tilemapTiledJSON",
                 "key": "Fire_exit_uusi"
-            },
-            {
-                "url": "assets/images_environment/FireExitend2.png",
-                "type": "image",
-                "key": "FireExitend2"
             },
             {
                 "url": "assets/images_environment/FireMenu.png",
@@ -87,6 +102,31 @@
                 "key": "hearts"
             },
             {
+                "url": "assets/images_player/left_1.png",
+                "type": "image",
+                "key": "left_1"
+            },
+            {
+                "url": "assets/images_player/left_2.png",
+                "type": "image",
+                "key": "left_2"
+            },
+            {
+                "url": "assets/images_player/left_3.png",
+                "type": "image",
+                "key": "left_3"
+            },
+            {
+                "url": "assets/images_player/left_4.png",
+                "type": "image",
+                "key": "left_4"
+            },
+            {
+                "url": "assets/images_player/left_idle.png",
+                "type": "image",
+                "key": "left_idle"
+            },
+            {
                 "url": "assets/Level.js",
                 "type": "sceneFile",
                 "key": "Level"
@@ -107,66 +147,6 @@
                 "key": "Physics"
             },
             {
-                "url": "assets/images_player/player_01.png",
-                "type": "image",
-                "key": "player_01"
-            },
-            {
-                "url": "assets/images_player/player_02.png",
-                "type": "image",
-                "key": "player_02"
-            },
-            {
-                "url": "assets/images_player/player_03.png",
-                "type": "image",
-                "key": "player_03"
-            },
-            {
-                "url": "assets/images_player/player_04.png",
-                "type": "image",
-                "key": "player_04"
-            },
-            {
-                "url": "assets/images_player/player_11.png",
-                "type": "image",
-                "key": "player_11"
-            },
-            {
-                "url": "assets/images_player/player_12.png",
-                "type": "image",
-                "key": "player_12"
-            },
-            {
-                "url": "assets/images_player/player_13.png",
-                "type": "image",
-                "key": "player_13"
-            },
-            {
-                "url": "assets/images_player/player_14.png",
-                "type": "image",
-                "key": "player_14"
-            },
-            {
-                "url": "assets/images_player/player_15.png",
-                "type": "image",
-                "key": "player_15"
-            },
-            {
-                "url": "assets/images_player/player_16.png",
-                "type": "image",
-                "key": "player_16"
-            },
-            {
-                "url": "assets/images_player/player_23.png",
-                "type": "image",
-                "key": "player_23"
-            },
-            {
-                "url": "assets/images_player/player_24.png",
-                "type": "image",
-                "key": "player_24"
-            },
-            {
                 "url": "components/player-animations.json",
                 "type": "animation",
                 "key": "player-animations"
@@ -177,14 +157,54 @@
                 "key": "restart"
             },
             {
+                "url": "assets/images_player/right_1.png",
+                "type": "image",
+                "key": "right_1"
+            },
+            {
+                "url": "assets/images_player/right_2.png",
+                "type": "image",
+                "key": "right_2"
+            },
+            {
+                "url": "assets/images_player/right_3.png",
+                "type": "image",
+                "key": "right_3"
+            },
+            {
+                "url": "assets/images_player/right_4.png",
+                "type": "image",
+                "key": "right_4"
+            },
+            {
+                "url": "assets/images_player/right_idle.png",
+                "type": "image",
+                "key": "right_idle"
+            },
+            {
                 "url": "assets/tiled/tiles.png",
                 "type": "image",
                 "key": "tiles"
             },
             {
-                "url": "assets/variables.js",
-                "type": "script",
-                "key": "variables"
+                "url": "assets/images_player/up_1.png",
+                "type": "image",
+                "key": "up_1"
+            },
+            {
+                "url": "assets/images_player/up_2.png",
+                "type": "image",
+                "key": "up_2"
+            },
+            {
+                "url": "assets/images_player/up_3.png",
+                "type": "image",
+                "key": "up_3"
+            },
+            {
+                "url": "assets/images_player/up_idle.png",
+                "type": "image",
+                "key": "up_idle"
             },
             {
                 "url": "assets/images_environment/wall_tile.png",

@@ -18,19 +18,27 @@ window.addEventListener('load', function () {
 				}		
 		}
 	});
-	
+
 	game.scene.add("Boot", Boot, true);
 
 });
 
 let textTime;
+let timer;
 let textGameOver;
+let textEnd;
 let timedEvent;
 let childrenFlames;
 let heartsLeft = 5;
 let emitters = [];
 let emitterPositionsX = [];
 let emitterPositionsY = [];
+var flameCounter = 1;
+var nextShot = 1000;
+let heartGroup;
+let flamesGroup;
+let flameOver = 0;
+let finalScore;
 
 
 class Boot extends Phaser.Scene {
