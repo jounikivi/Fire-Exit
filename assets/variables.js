@@ -1,17 +1,17 @@
-		var flameCounter = 1;
-		var nextShot = 1000;
+let flameCounter = 1
+let nextShot = 1000
 
-		let heartGroup;
-		let flamesGroup;
-		let flameOver = 0;
-		
-		var coordinates = [];
-		var i = 0;
+let heartGroup
+let flamesGroup
+let flameOver = 0
 
-		for (i = 0; i < 30; i++) {
-			coordinates[i] = (Math.random()+0.014)*3200;
-			}
-			
+const coordinates = []
+let i = 0
+
+for (i = 0; i < 30; i++) {
+  coordinates[i] = (Math.random() + 0.014) * 3200
+}
+
 /*
 function luoEmitter() {
 		//let particles = add.particles("flame");
@@ -28,4 +28,3 @@ function luoEmitter() {
 		emitter.setBlendMode(Phaser.BlendModes.ADD);
 	}
 	*/
-

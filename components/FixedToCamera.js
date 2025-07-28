@@ -1,40 +1,34 @@
-
 // You can write more code here
 
 /* START OF COMPILED CODE */
 
 class FixedToCamera {
-	
-	constructor(gameObject) {
-		gameObject["__FixedToCamera"] = this;
-		
-		/** @type {Phaser.GameObjects.Image} */
-		this.gameObject = gameObject;
-		
-		/* START-USER-CTR-CODE */
-		// Write your code here.
-		/* END-USER-CTR-CODE */
-	}
-	
-	/** @returns {FixedToCamera} */
-	static getComponent(gameObject) {
-		return gameObject["__FixedToCamera"];
-	}
-	
-	/* START-USER-CODE */
+  constructor(gameObject) {
+    gameObject['__FixedToCamera'] = this
 
-	// Write your code here.
+    /** @type {Phaser.GameObjects.Image} */
+    this.gameObject = gameObject
 
-		start() {
+    /* START-USER-CTR-CODE */
+    // Write your code here.
+    /* END-USER-CTR-CODE */
+  }
 
-	this.gameObject.fixedToCamera = true;
-	this.gameObject.setScrollFactor(1, 1);
-		
-	}
+  /** @returns {FixedToCamera} */
+  static getComponent(gameObject) {
+    return gameObject['__FixedToCamera']
+  }
 
+  /* START-USER-CODE */
 
+  // Write your code here.
 
-	/* END-USER-CODE */
+  start() {
+    this.gameObject.fixedToCamera = true
+    this.gameObject.setScrollFactor(1, 1)
+  }
+
+  /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */

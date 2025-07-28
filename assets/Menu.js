@@ -1,46 +1,40 @@
-
 // You can write more code here
 
 /* START OF COMPILED CODE */
 
 class Menu extends Phaser.Scene {
-	
-	constructor() {
-		super("Menu");
-		
-		/* START-USER-CTR-CODE */
-		// Write your code here.
-		/* END-USER-CTR-CODE */
-	}
-	
-	editorCreate() {
-		
-		// fire_Exitmenu
-		this.add.image(1600, 1600, "Fire-Exitmenu");
-		
-		// fireMenu
-		this.add.image(1600, 1600, "FireMenu");
-	}
-	
-	/* START-USER-CODE */
+  constructor() {
+    super('Menu')
 
-	// Write your code here.
+    /* START-USER-CTR-CODE */
+    // Write your code here.
+    /* END-USER-CTR-CODE */
+  }
 
-	create() {
+  editorCreate() {
+    // fire_Exitmenu
+    this.add.image(1600, 1600, 'Fire-Exitmenu')
 
-		this.editorCreate()
+    // fireMenu
+    this.add.image(1600, 1600, 'FireMenu')
+  }
 
-		this.input.keyboard.on("keydown-ENTER", this.enterPressed, this);
-		this.input.on("pointerdown", this.enterPressed, this);
-	}
+  /* START-USER-CODE */
 
-	enterPressed() {	
-				this.scene.start("Level");
-			}
+  // Write your code here.
 
-	
+  create() {
+    this.editorCreate()
 
-	/* END-USER-CODE */
+    this.input.keyboard.on('keydown-ENTER', this.enterPressed, this)
+    this.input.on('pointerdown', this.enterPressed, this)
+  }
+
+  enterPressed() {
+    this.scene.start('Level')
+  }
+
+  /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */

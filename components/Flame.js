@@ -1,45 +1,40 @@
-
 // You can write more code here
 
 /* START OF COMPILED CODE */
 
 class Flame {
-	
-	constructor(gameObject) {
-		gameObject["__Flame"] = this;
-		
-		/** @type {Phaser.GameObjects.Image} */
-		this.gameObject = gameObject;
-		
-		/* START-USER-CTR-CODE */
-		// Write your code here.
+  constructor(gameObject) {
+    gameObject['__Flame'] = this
 
-		this.scene = this.gameObject.scene
+    /** @type {Phaser.GameObjects.Image} */
+    this.gameObject = gameObject
 
-		// first time the scene is updated, call the `start` method
-        this.scene.events.once(Phaser.Scenes.Events.UPDATE, this.start, this);
+    /* START-USER-CTR-CODE */
+    // Write your code here.
 
-		/* END-USER-CTR-CODE */
-	}
-	
-	/** @returns {Flame} */
-	static getComponent(gameObject) {
-		return gameObject["__Flame"];
-	}
-	
-	/* START-USER-CODE */
+    this.scene = this.gameObject.scene
 
-	// Write your code here.
+    // first time the scene is updated, call the `start` method
+    this.scene.events.once(Phaser.Scenes.Events.UPDATE, this.start, this)
 
-	start() {
+    /* END-USER-CTR-CODE */
+  }
 
-	const flame = this.gameObject
-	flame.play('flame', true)
-	}
+  /** @returns {Flame} */
+  static getComponent(gameObject) {
+    return gameObject['__Flame']
+  }
 
+  /* START-USER-CODE */
 
+  // Write your code here.
 
-	/* END-USER-CODE */
+  start() {
+    const flame = this.gameObject
+    flame.play('flame', true)
+  }
+
+  /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */
