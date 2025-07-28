@@ -26,7 +26,13 @@ class Menu extends Phaser.Scene {
   create() {
     this.editorCreate()
 
-    this.input.keyboard.on('keydown-ENTER', this.enterPressed, this)
+    this.input.keyboard.on('keydown', (event) => {
+      console.log('Key pressed:', event.code)
+      if (event.code === 'Enter' || event.key === 'Enter') {
+        this.enterPressed()
+      }
+    })
+
     this.input.on('pointerdown', this.enterPressed, this)
   }
 
