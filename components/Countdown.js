@@ -1,94 +1,86 @@
-
 // You can write more code here
 
 /* START OF COMPILED CODE */
 
 class Countdown {
-	
-	constructor(gameObject) {
-		gameObject["__Countdown"] = this;
-		
-		/** @type {Phaser.GameObjects.Text} */
-		this.gameObject = gameObject;
-		
-		/* START-USER-CTR-CODE */
-		// Write your code here.
+  constructor(gameObject) {
+    gameObject['__Countdown'] = this
 
-		/** @type {Phaser.Time.TimerEvent} */
-		this.timerEvent
+    /** @type {Phaser.GameObjects.Text} */
+    this.gameObject = gameObject
 
-		const scene = this.gameObject.scene
+    /* START-USER-CTR-CODE */
+    // Write your code here.
 
-		// each time the scene is updated, call the `update` method
-        scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this);
-		
-		/* END-USER-CTR-CODE */
-	}
-	
-	/** @returns {Countdown} */
-	static getComponent(gameObject) {
-		return gameObject["__Countdown"];
-	}
-	
-	/* START-USER-CODE */
+    /** @type {Phaser.Time.TimerEvent} */
+    this.timerEvent
 
-	// Write your code here.
+    const scene = this.gameObject.scene
 
-	start(callback, duration = 5000)
-	{
-			this.scene = this.gameObject.scene
+    // each time the scene is updated, call the `update` method
+    scene.events.on(Phaser.Scenes.Events.UPDATE, this.update, this)
 
-			this.duration = duration
+    /* END-USER-CTR-CODE */
+  }
 
-			// 1️⃣ stop in case one is already running
-			this.stop()
+  /** @returns {Countdown} */
+  static getComponent(gameObject) {
+    return gameObject['__Countdown']
+  }
 
-			// 2️⃣ create a TimerEvent with given duration
-			this.timerEvent = this.scene.time.addEvent({
-				delay: duration,
-				callback: () => {
-					this.gameObject.text = '0' // 👈 set to 0 since time is up
-					this.stop();
-				
-					// 3️⃣ execute callback when finished
-					if (callback)
-					{
-						callback()
-					}
-			}
-		})
-	}
+  /* START-USER-CODE */
 
-	stop()
-	{
-		if (this.timerEvent)
-		{
-			this.timerEvent.destroy()
-			this.timerEvent = undefined
-		}
-	}
+  // Write your code here.
 
-	update()
-	{ 
-			if (!this.timerEvent || this.duration <= 0)
-			{
-			return
-			}
+  start(callback, duration = 5000) {
+    this.scene = this.gameObject.scene
 
-			// 1️⃣ get the elapsed time
-			const elapsed = this.timerEvent.getElapsed()
+    this.duration = duration
 
-			// 2️⃣ subtract from total duration
-			const remaining = this.duration - elapsed
+    // 1️⃣ stop in case one is already running
+    this.stop()
 
-			// 3️⃣ convert from milliseconds to seconds
-			const seconds = remaining / 1000
+    // 2️⃣ create a TimerEvent with given duration
+    this.timerEvent = this.scene.time.addEvent({
+      delay: duration,
+      callback: () => {
+        this.gameObject.text = '0' // 👈 set to 0 since time is up
+        this.stop()
 
-			// 4️⃣ change label to show new value
-			this.gameObject.text = seconds.toFixed(0)
-	}
+        // 3️⃣ execute callback when finished
+        if (callback) {
+          callback()
+        }
+      },
+    })
+  }
 
-	/* END-USER-CODE */
+  stop() {
+    if (this.timerEvent) {
+      this.timerEvent.destroy()
+      this.timerEvent = undefined
+    }
+  }
+
+  update() {
+    if (!this.timerEvent || this.duration <= 0) {
+      return
+    }
+
+    // 1️⃣ get the elapsed time
+    const elapsed = this.timerEvent.getElapsed()
+
+    // 2️⃣ subtract from total duration
+    const remaining = this.duration - elapsed
+
+    // 3️⃣ convert from milliseconds to seconds
+    const seconds = remaining / 1000
+
+    // 4️⃣ change label to show new value
+    this.gameObject.text = seconds.toFixed(0)
+  }
+
+  /* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */
