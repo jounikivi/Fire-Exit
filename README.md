@@ -14,3 +14,8 @@ Fire-Exit is a small demonstration game built for the H2C course. It is written 
 
 All required libraries are included in the `lib/` folder, and the game assets are
 already unpacked in the `assets/` folder.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
