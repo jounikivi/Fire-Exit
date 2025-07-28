@@ -1,10 +1,10 @@
 
 window.addEventListener('load', function () {
   const game = new Phaser.Game({
-    width: 3200,
-    height: 3200,
+    width: 800,
+    height: 600,
     type: Phaser.AUTO,
-    backgroundColor: '#242424',
+    backgroundColor: '#000000',
     scale: {
       mode: Phaser.Scale.FIT,
       autoCenter: Phaser.Scale.CENTER_BOTH,
@@ -13,20 +13,23 @@ window.addEventListener('load', function () {
       default: 'arcade',
       arcade: {
         gravity: { y: 0 },
-        debug: true,
+        debug: false,
       },
     },
   });
 
   game.scene.add('Boot', Boot, true);
   game.scene.add('Menu', Menu);
-  game.scene.add('Game', Game);
+  game.scene.add('Level', Level); // Rekisteröi Level-scene
 });
 
 class Boot extends Phaser.Scene {
   preload() {
-    this.load.pack('pack', 'assets/asset-pack.json');
+    this.load.image('menu_bg', 'assets/images_environment/FireMenu.png');
     this.load.image('flame', 'assets/images_environment/flame.png');
+
+    // Tässä oletetaan että asset-pack.json lataa kentän tilemapin
+    this.load.pack('pack', 'assets/asset-pack.json');
   }
 
   create() {
@@ -40,26 +43,36 @@ class Menu extends Phaser.Scene {
   }
 
   create() {
-    this.add.text(300, 200, 'Aloita peli painamalla ENTER', {
-      font: '32px Arial',
+    const centerX = this.cameras.main.centerX;
+    const centerY = this.cameras.main.centerY;
+
+    this.add.image(centerX, centerY, 'menu_bg').setOrigin(0.5).setDisplaySize(800, 600);
+
+    this.add.text(centerX, 60, 'Fire Exit', {
+      font: '64px Arial',
       fill: '#ff0000',
-    });
+      stroke: '#000',
+      strokeThickness: 4
+    }).setOrigin(0.5);
+
+    this.add.text(centerX, 200, 'Aloita peli painamalla Enter', {
+      font: '28px Arial',
+      fill: '#ff0000'
+    }).setOrigin(0.5);
+
+    this.add.text(centerX, 230, 'press enter start game', {
+      font: '20px Arial',
+      fill: '#ff0000'
+    }).setOrigin(0.5);
+
+    this.add.text(centerX, 550, 'Tekijät\nJouni Kiviperä,\nRauno Vesti', {
+      font: '20px Arial',
+      fill: '#ff0000',
+      align: 'center'
+    }).setOrigin(0.5);
 
     this.input.keyboard.on('keydown-ENTER', () => {
-      this.scene.start('Game');
-    });
-  }
-}
-
-class Game extends Phaser.Scene {
-  constructor() {
-    super('Game');
-  }
-
-  create() {
-    this.add.text(300, 300, 'Peli käynnistyi!', {
-      font: '32px Arial',
-      fill: '#00ff00',
+      this.scene.start('Level'); // Käynnistää kentän
     });
   }
 }
