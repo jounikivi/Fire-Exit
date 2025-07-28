@@ -9,7 +9,7 @@ Fire-Exit is a small demonstration game built for the H2C course. It is written 
 
 ### Running
 1. Clone or download this repository.
-2. Run `npm install` to fetch the Phaser dependency.
+2. Run `npm instal` to fetch the Phaser dependency.
 3. Serve the files through a local web server (for example `npx serve` or `python -m http.server`).
 4. Open `index.html` in your browser from that local server.
 
