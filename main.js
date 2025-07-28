@@ -20,7 +20,7 @@ window.addEventListener('load', function () {
 
   game.scene.add('Boot', Boot, true);
   game.scene.add('Menu', Menu);
-  game.scene.add('Level', Level); // Rekisteröi Level-scene
+  // game.scene.add('Level', Level); // Level scene is registered in Boot
 });
 
 class Boot extends Phaser.Scene {
@@ -33,6 +33,7 @@ class Boot extends Phaser.Scene {
   }
 
   create() {
+    this.scene.game.scene.add('Level', Level);
     this.scene.start('Menu');
   }
 }
