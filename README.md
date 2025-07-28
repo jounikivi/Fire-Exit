@@ -12,4 +12,5 @@ Fire-Exit is a small demonstration game built for the H2C course. It is written 
 2. Serve the files through a local web server (for example `npx serve` or `python -m http.server`).
 3. Open `index.html` in your browser from that local server.
 
-All required libraries are included in the `lib/` folder and the `assets/` folder.
+All required libraries are included in the `lib/` folder, and the game assets are
+already unpacked in the `assets/` folder.
