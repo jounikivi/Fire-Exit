@@ -1,0 +1,11 @@
+{
+  "name": "fire-exit",
+  "version": "1.0.0",
+  "description": "Fire Exit game built with Phaser",
+  "main": "main.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "phaser": "^3.60.0"
+  }
+}
