@@ -132,11 +132,6 @@
                 "key": "Level"
             },
             {
-                "url": "assets/Menu.js",
-                "type": "sceneFile",
-                "key": "Menu"
-            },
-            {
                 "url": "components/Movement.js",
                 "type": "script",
                 "key": "Movement"
