@@ -204,24 +204,21 @@ class Level extends Phaser.Scene {
   addFlames() {
     // ADD PARICLE EMITTERS:
 
-    let particles = this.add.particles('flame_big_1')
-    particles.setDepth(96)
-
-    let h
-    for (h = 0; h < 30; h++) {
+    // Create random positions for the emitters
+    for (let h = 0; h < 30; h++) {
       this.emitterPositionsX[h] = (Math.random() + 0.02) * 3000
       this.emitterPositionsY[h] = (Math.random() + 0.02) * 3000
-    }
 
-    let i
-    for (i = 0; i < 30; i += 1) {
-      this.emitters[i] = particles.createEmitter()
-      this.emitters[i].setPosition(
-        this.emitterPositionsX[i],
-        this.emitterPositionsY[i],
+      // Phaser 3.60: directly create an emitter for each position
+      const emitter = this.add.particles(
+        this.emitterPositionsX[h],
+        this.emitterPositionsY[h],
+        'flame_big_1',
+        { speed: 50, blendMode: Phaser.BlendModes.ADD },
       )
-      this.emitters[i].setSpeed(50)
-      this.emitters[i].setBlendMode(Phaser.BlendModes.ADD)
+
+      emitter.setDepth(96)
+      this.emitters[h] = emitter
     }
   }
 
